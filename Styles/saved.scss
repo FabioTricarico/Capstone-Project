@@ -1,0 +1,114 @@
+/* Variables */
+$body-color: #000000;
+$body-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$body-bg-image: url(https://img.freepik.com/premium-photo/abstract-paper-hexagon-white-background-3d-rendering-illustration_157125-13215.jpg?w=2000);
+$header-bg-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149020687.jpg?size=626&ext=jpg&ga=GA1.1.2099653004.1686323262&semt=ais);
+$header-color: #000000;
+$header-border-color: #000000;
+$table-border-color: #000000;
+$table-bg-color: #ffffff;
+$list-container-border-color: #000000;
+$footer-bg-color: lightgray;
+$footer-link-color: #000000;
+
+/* Styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  color: $body-color;
+  font-family: $body-font;
+  text-align: center;
+  background-image: $body-bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: $header-bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $header-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $header-border-color;
+}
+
+#saved-title {
+  font-size: 50px;
+  margin: 0;
+}
+
+header ul {
+  color: $body-color;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  color: $body-color;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list-container {
+  list-style-type: none;
+  border: 1px solid $list-container-border-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  height: 90px;
+}
+
+ol {
+  align-items: center;
+  padding-left: 0;
+  margin-top: 20px;
+  list-style-type: none;
+  counter-reset: item;
+}
+
+ol li {
+  list-style: none;
+  align-items: center;
+  margin-right: 10px;
+  counter-increment: item;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  margin-right: 5px;
+}
+
+footer {
+  background-color: $footer-bg-color;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.picture-container img {
+  width: 450px;
+  height: 400px;
+  margin: 10px;
+}

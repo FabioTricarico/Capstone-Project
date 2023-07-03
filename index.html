@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GamesNews</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="JS/index.js"></script>
+  <link rel="stylesheet" href="Styles/index.css">
+  <style>
+    /* Added CSS for the like button */
+    .like-button {
+      position: relative;
+    }
+    .like-button .like-count {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 5px;
+      border-radius: 50%;
+    }
+    .like-button.clicked .like-count {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- The wrapper is used to group the various elements of the page together -->
+  <div class="wrapper">
+    <!-- The image is set as the background of the webpage -->
+    <header style="background-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149020687.jpg?size=626&ext=jpg&ga=GA1.1.2099653004.1686323262&semt=ais);">
+      <!-- The header container is used to group and control the elements of the header -->
+      <div class="header-container">
+        <!-- This is used to set and control the heading of the page -->
+        <h1 id="gamesnews-title">GamesNews</h1>
+        <nav>
+          <ul>
+            <!-- This is used to navigate the pages of the website -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Details</a></li>
+            <!-- Added link to the "Save for Later" page -->
+            <li><a href="saved.html">Save for Later</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Images added to top of page -->
+    <div class="picture-container">
+      <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2023/06/02/3847426-679382271.jpg?itok=_-U8GR0_" alt="Image 1 description" class="image-1">
+      <img src="https://assetsio.reedpopcdn.com/gow-ragnarok-lead.jpg?width=720&quality=70&format=jpg&dpr=2&auto=webp" alt="Image 2 description" class="image-2">
+      <img src="https://www.gematsu.com/wp-content/uploads/2023/06/AC-Mirage-Dev-Diary_06-09-23-1440x810.jpg" alt="Image 3 description" class="image-3">
+    </div>
+
+    <!-- This is used to manipulate the heading of the table -->
+    <!-- Saved for later and Like functionality added -->
+    <h2 id="Table">Upcoming Release Dates</h2>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Release Date</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Final Fantasy XVI</td>
+        <td>June 22nd</td>
+        <td><button class="save-button" data-title="Final Fantasy XVI" data-date="June 22nd">Save for later</button></td>
+        <td><button class="like-button">Like<span class="like-count">0</span></button></td>
+      </tr>
+      <tr>
+        <td>Sonic Origins Plus</td>
+        <td>June 23rd</td>
+        <td><button class="save-button" data-title="Sonic Origins Plus" data-date="June 23rd">Save for later</button></td>
+        <td><button class="like-button">Like<span class="like-count">0</span></button></td>
+      </tr>
+      <tr>
+        <td>Immortals of Aveum</td>
+        <td>July 20th</td>
+        <td><button class="save-button" data-title="Immortals of Aveum" data-date="July 20th">Save for later</button></td>
+        <td><button class="like-button">Like<span class="like-count">0</span></button></td>
+      </tr>
+    </table>
+
+    <!-- This is used to manipulate the heading of the list -->
+    <!-- Saved for later and Like functionality added -->
+    <h2 id="List">Best-Selling Games of the Month</h2>
+    <!-- The list container is used to group and control the elements of the list -->
+    <div class="list-container">
+      <form>
+        <ol>
+          <li><span class="game-item">Star Wars Jedi: Survivor</span> <button class="save-button" data-title="Star Wars Jedi: Survivor" data-date="">Save for Later</button> <button class="like-button">Like<span class="like-count">0</span></button></li>
+          <li><span class="game-item">Dead Island 2</span> <button class="save-button" data-title="Dead Island 2" data-date="">Save for Later</button> <button class="like-button">Like<span class="like-count">0</span></button></li>
+          <li><span class="game-item">MLB: The Show 23</span> <button class="save-button" data-title="MLB: The Show 23" data-date="">Save for Later</button> <button class="like-button">Like<span class="like-count">0</span></button></li>
+        </ol>
+      </form>
+    </div>
+
+    <!-- This is used to manipulate the heading of the radio list -->
+    <!-- Saved for later and Like functionality added -->
+    <h2 id="Radio">Upcoming Games</h2>
+    <!-- The radio container is used to group and control the elements of the radio list -->
+    <div class="radio-container">
+      <form>
+        <p>What upcoming game are you most excited for?</p>
+        <label><input type="radio" name="upcoming-game" value="Assassins Creed Mirage"> Assassins Creed Mirage <button class="save-button" data-title="Assassins Creed Mirage" data-date="">Save for Later</button> <button class="like-button">Like<span class="like-count">0</span></button></label><br>
+        <label><input type="radio" name="upcoming-game" value="Spider-Man 2"> Spider-Man 2 <button class="save-button" data-title="Spider-Man 2" data-date="">Save for Later</button> <button class="like-button">Like<span class="like-count">0</span></button></label><br>
+        <label><input type="radio" name="upcoming-game" value="Final Fantasy 7 Remake: Rebirth"> Final Fantasy 7: Rebirth <button class="save-button" data-title="Final Fantasy 7: Rebirth" data-date="">Save for Later</button> <button class="like-button">Like<span class="like-count">0</span></button></label><br>
+      </form>
+    </div>
+    <!-- This is used to manipulate the heading of the testimonial -->
+    <h2 id="Testimonial">Testimonial</h2>
+    <blockquote>
+      <!-- This is used to manipulate the text of the testimonial -->
+      <p id="TestimonialText"></p>
+      <cite>- Happy Visitor</cite>
+    </blockquote>
+    <!-- This is used to manipulate the heading of the subscriber form -->
+    <h2 id="Subscribe">Subscribe to our newsletter</h2>
+    <!-- The subscribe container is used to group and control the elements of the subscriber form -->
+    <div class="subscribe-container">
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+
+    <!-- External links added -->
+    <div class="external-links">
+      <p>For further reading on these topics, go to:</p>
+      <!-- Website links placed in dropbox -->
+      <div class="dropdown">
+        <button class="dropbtn">Explore</button>
+        <div class="dropdown-content">
+          <a href="https://www.ign.com/articles/video-game-release-dates-ps4-ps5-xbox-one-series-x-nintendo-switch">Upcoming Release Dates</a>
+          <a href="https://www.npd.com/news/entertainment-top-10/2023/top-10-video-games/">Best-Selling Games of the Year</a>
+          <a href="https://www.ign.com/articles/10-upcoming-gaming-events-june-2023">June Game Showcases</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is used to manipulate the heading of the comments box -->
+    <h2 id="Comments">Leave a Comment</h2>
+    <div class="comment-container">
+      <form class="comment-form">
+        <textarea rows="4" cols="50" placeholder="Enter your comment"></textarea><br>
+        <input type="text" placeholder="Name"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <footer>
+      <!-- This is used to manipulate the elements of the footer -->
+      <div id="footer-center">
+        <a href="#">&copy;2023 GamesNews. All rights reserved</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

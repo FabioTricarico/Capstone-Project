@@ -1,0 +1,85 @@
+/*An image is set as the background for the webpage*/
+/*The headers background is set as an image*/
+/*The colour for the text in the webpage is set to black*/
+/*The colour for the text in the header is set to black*/
+/*The colour for the border of the header is set to black*/
+/*The colour for the list in the webpage is set to white*/
+/*The colour for the background of the contact details is set to white*/
+/*The colour for the border of the contact details is set to black*/
+/*The colour for the background of the footer is set to white*/
+body {
+  background-image: url(https://img.freepik.com/free-vector/white-elegant-texture-background-style_23-2148432200.jpg?w=2000&t=st=1686497592~exp=1686498192~hmac=618f23c12191ece104c6add8dd0f7af50840f480793fda57358fe51a80aa5483);
+  color: #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149020687.jpg?size=626&ext=jpg&ga=GA1.1.2099653004.1686323262&semt=ais);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.picture-container img {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+}
+
+#contact-details-title {
+  font-size: 50px;
+  margin: 0;
+}
+
+header ul {
+  color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.contact-details-container {
+  max-width: 800px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  width: 75%;
+  padding: 20px;
+  padding-top: 15px;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,228 @@
+/* Variables */
+$body-color: #000000;
+$body-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$body-bg-image: url(https://img.freepik.com/premium-photo/abstract-paper-hexagon-white-background-3d-rendering-illustration_157125-13215.jpg?w=2000);
+$header-bg-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149020687.jpg?size=626&ext=jpg&ga=GA1.1.2099653004.1686323262&semt=ais);
+$header-color: #000000;
+$header-border-color: #000000;
+$list-color: #ffffff;
+$table-border-color: #000000;
+$table-bg-color: #ffffff;
+$caption-font-weight: bold;
+$list-container-border-color: #000000;
+$radio-container-border-color: #000000;
+$footer-bg-color: lightgray;
+$footer-link-color: #000000;
+
+/* Styles */
+body {
+  color: $body-color;
+  font-family: $body-font;
+  text-align: center;
+  background-image: $body-bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: auto;
+}
+
+header {
+  background-image: $header-bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $header-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $header-border-color;
+}
+
+#gamesnews-title {
+  font-size: 50px;
+  margin: 0;
+}
+
+header ul {
+  color: $list-color;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  color: $list-color;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.picture-container img {
+  width: 475px;
+  height: 350px;
+  margin: 10px;
+}
+
+#Table {
+  margin-top: 40px;
+}
+
+table {
+  margin: auto;
+  width: 50%;
+  border-collapse: collapse;
+  border: 1px solid $table-border-color;
+  border-radius: 20px;
+  background-color: $table-bg-color;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid $table-border-color;
+  border-right: 1px solid $table-border-color;
+}
+
+caption {
+  font-weight: $caption-font-weight;
+  margin-bottom: 10px;
+}
+
+.list-container {
+  border: 1px solid $list-container-border-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  height: 90px;
+}
+
+ol {
+  align-items: center;
+  padding-left: 0;
+  margin-top: 20px;
+  list-style-type: none;
+  counter-reset: item;
+}
+
+ol li {
+  align-items: center;
+  margin-right: 10px;
+  counter-increment: item;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  margin-right: 5px;
+}
+
+.radio-container {
+  border: 1px solid $radio-container-border-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  height: 150px;
+}
+
+#Subsribe,
+#Upcoming-Game,
+#Testimonial {
+  margin-top: 20px;
+}
+
+.subscribe-container {
+  border: 1px solid $radio-container-border-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  width: 15%;
+  height: 40px;
+}
+
+.externallink {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: $footer-bg-color;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#footer-center a {
+  color: $footer-link-color;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.radio-container .save-button,
+.radio-container .like-button {
+  margin-top: 7px; /* Adjust the margin value as per your preference */
+}
+
+.like-button {
+  position: relative;
+}
+.like-button .like-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+.like-button.clicked .like-count {
+  background-color: green;
+}

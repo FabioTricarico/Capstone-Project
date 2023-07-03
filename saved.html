@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Title of the webpage -->
+  <title>GamesNews - Save for Later</title> 
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <!-- Include custom JavaScript file -->
+  <script src="JS/saved.js"></script>
+  <!-- Include custom CSS file -->
+  <link rel="stylesheet" href="Styles/saved.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header style="background-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149020687.jpg?size=626&ext=jpg&ga=GA1.1.2099653004.1686323262&semt=ais);">
+      <!-- Heading for the page -->
+      <div class="header-container">
+        <h1 id="saved-title">Save for Later</h1> 
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Details</a></li>
+            <!-- Added link to the "Save for Later" page -->
+            <li><a href="saved.html">Save for Later</a></li> 
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Heading for the saved items section -->
+    <h2>Saved Items</h2> 
+    <!-- List to display saved items -->
+    <ul id="saved-items"></ul> 
+   
+    <!-- Button to clear saved items -->
+    <button id="clear-storage">Clear Saved Items</button>
+
+    <div class="picture-container">
+      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1716740/header.jpg?t=1687290127" alt="Image 1 description" class="image-1">
+      <img src="https://assetsio.reedpopcdn.com/pikmin-4-announcement-art.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp" alt="Image 2 description" class="image-2">
+      <img src="https://images.purexbox.com/eb30aaf433ddb/alan-wake-2-being-digital-only-will-hopefully-result-in-a-better-game-says-developer.large.jpg" alt="Image 3 description" class="image-3">
+    </div>
+
+    <footer>
+      <div id="footer-center">
+        <a href="#">&copy;2023 GamesNews. All rights reserved</a> 
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

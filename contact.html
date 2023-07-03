@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Details</title>
+  <link rel="stylesheet" href="Styles/contact.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="JS/contact.js"></script>
+</head>
+<body>
+  <!-- The image is set as the background of the webpage -->
+  <header style="background-image: url(https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149020687.jpg?size=626&ext=jpg&ga=GA1.1.2099653004.1686323262&semt=ais);">
+    <!-- The header container is used to group and control the elements of the header -->
+    <div class="header-container">
+      <!-- This is used to set and control the heading of the page -->
+      <h1 id="contact-details-title">Contact Details</h1>
+      <nav>
+        <ul>
+          <!-- This is used to navigate the pages of the website -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact Details</a></li>
+          <!-- Added link to the "Save for Later" page -->
+          <li><a href="saved.html">Save for Later</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- The contact details container is used to group and control the elements of the contact details -->
+    <div class="contact-details-container">
+      <h2>Contact Information</h2>
+      <!-- Links added -->
+      <p>Email: <a href="mailto:fabio.tricarico9@gmail.com">fabio.tricarico9@gmail.com</a></p>
+      <p>Phone number: <a href="tel:0670155851">0670155851</a></p>
+      <p>Address: <a href="https://www.google.com/maps?q=33+Letchworth+Drive,+Edgemead,+Cape+Town,+South+Africa,+7441" target="_blank">33 Letchworth Drive, Edgemead, Cape Town, South Africa, 7441</a></p>
+      <h2>Contact Form</h2>
+      <form class="contact-form" action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- The picture container is used to group and control the images at the bottom of the page -->
+  <div class="picture-container">
+    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2023_09/3596622/230302-gaming-consoles-bd-2x1.jpg" alt="Picture 1">
+    <img src="https://i.pcmag.com/imagery/roundups/07sBMitXcz0UXdYU6LowlQt-2.fit_lim.size_1600x900.v1648837830.jpg" alt="Picture 2">
+    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/13729/production/_112375697_1331db7a-17c0-4401-8cac-6a2309ff49b6.jpg" alt="Picture 3">
+  </div>
+
+  <!-- This is used to manipulate the footer -->
+  <footer>
+    <p>&copy; 2023 GamesNews. All rights reserved.</p>
+  </footer>
+</body>
+</html>
